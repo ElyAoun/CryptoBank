@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/backimg_scanner"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_back" />
+    <SurfaceView
+        android:id="@+id/camerapreview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camerapreview"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Focus on QR code"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/shortxurkit_2xdv" />
+</RelativeLayout>

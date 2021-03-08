@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:stretchColumns="1">
+
+    <TextView
+        android:id="@+id/titleScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/shortxurkit_2xdv"
+        android:text="@string/Cryptobank"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:contentDescription="crypto_icon"
+        android:src="@drawable/crypto_icons" />
+
+    <TableRow
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Name:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_form"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email_form"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password_form"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/datebirth_form"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="@string/date_format"
+            android:editable="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17sp" />
+
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/shortxurkit_2xdv"
+        android:onClick="SignUp"
+        android:text="Sign up"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:theme="@style/My_button_style" />
+</TableLayout>
